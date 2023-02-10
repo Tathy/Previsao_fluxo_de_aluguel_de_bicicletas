@@ -27,7 +27,7 @@ Quantidade de bicicletas computadas em um determinada data e hora.
 
 * É utilizada uma janela deslizante de um tamanho especificado. Os dados históricos são coletados no intervalo desta janela e adicionados à entrada da próxima iteração.
 
-* Recebe uma matriz tridimensional, em que a terceira dimensão define o número de atributos por passo no tempo.
+* No estudo, a rede recorrente escolhida foi a LSTM.
 
 
 ## Referências 
