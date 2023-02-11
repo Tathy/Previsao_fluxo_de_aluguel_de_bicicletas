@@ -45,17 +45,23 @@ Quantidade de bicicletas computadas em um determinada data e hora.
 * Entretando, ainda ocorrem ou podem ocorrer picos que não são bem previstos pelo modelo.
 * A Rede Recorrente com GRU teve uma quantidade de parâmetros 25% menor, aproximadamente.
 
-[gráficos 1 e 2]
+<div align="center">
+  <img src="https://github.com/Tathy/Previsao_fluxo_de_aluguel_de_bicicletas/blob/main/imgs/graph_LSTM.png?raw=true"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/Tathy/Previsao_fluxo_de_aluguel_de_bicicletas/blob/main/imgs/graph_GRU.png?raw=true"/>
+</div>
 
 ### Comparação entre os dois modelos
 
 * Nos dois casos os resultados foram satisfatórios.
 * Em uma análise apenas visual, a GRU se sai um pouco melhor que a LSTM, além de ser mais barata computacionalmente.
 
-[gráfico 3]
+<div align="center">
+  <img src="https://github.com/Tathy/Previsao_fluxo_de_aluguel_de_bicicletas/blob/main/imgs/graph_loss_LSTM_GRU.png?raw=true"/>
+</div>
 
 ## Referências 
 
 * Estudo desenvolvido acompanhando o curso [Deep Learning: previsão com Keras](https://cursos.alura.com.br/course/deep-learning-previsao-keras), da Alura.
-
-:seedling:
