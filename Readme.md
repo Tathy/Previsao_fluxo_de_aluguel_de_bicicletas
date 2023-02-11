@@ -27,8 +27,32 @@ Quantidade de bicicletas computadas em um determinada data e hora.
 
 * É utilizada uma janela deslizante de um tamanho especificado. Os dados históricos são coletados no intervalo desta janela e adicionados à entrada da próxima iteração.
 
-* No estudo, a rede recorrente escolhida foi a LSTM.
+* No estudo, as redes recorrentes escolhidas foram LSTM e GRU.
 
+#### **LSTM** (Long Short Term Memory)
+  * É usado em séries muito longas, uma rede neural recorrente comum não consegue lidar com padrões muito distantes da iteração corrente (históricos distantes).
+
+#### **GRU** (Gated Recurrent Unit)
+  * Tem uma estrutura menor que a LSTM, com menos parâmetros internos. Portanto seu treinamento é mais rápido.
+  * Entretando, as LSTMs "lembram" de sequências maiores. 
+  
+#### **RMSProp** 
+  * É um otimizador *adaptativos* que evita a *explosão de gradiente* que pode ser causado por modelos recorrentes, ou seja, evita que cresça muito, se aproxime demais ou fique igual a zero. 
+  
+### Treinamento e Teste
+
+* Visualmente, as predições parecem acompanhar bem os números padrões do dataset.
+* Entretando, ainda ocorrem ou podem ocorrer picos que não são bem previstos pelo modelo.
+* A Rede Recorrente com GRU teve uma quantidade de parâmetros 25% menor, aproximadamente.
+
+[gráficos 1 e 2]
+
+### Comparação entre os dois modelos
+
+* Nos dois casos os resultados foram satisfatórios.
+* Em uma análise apenas visual, a GRU se sai um pouco melhor que a LSTM, além de ser mais barata computacionalmente.
+
+[gráfico 3]
 
 ## Referências 
 
